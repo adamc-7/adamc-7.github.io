@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event-based 3D Motion Detection with Depth-Dependent PSFs</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background-color: #fefefe;
+    }
+
+    h1 {
+      font-size: 28px;
+      /* color: #333; */
+    }
+
+    .authors {
+      font-size: 16px;
+      /* color: #555; */
+      margin-bottom: 20px;
+    }
+
+    .section-title {
+      font-weight: bold;
+      margin-top: 30px;
+      font-size: 18px;
+    }
+
+    .paper-image {
+      width: 100%;
+      max-height: 400px;
+      object-fit: contain;
+      margin-top: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .button-link {
+      display: inline-block;
+      background-color: #007BFF;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 4px;
+      border: 2px solid #0056b3;
+      text-decoration: none;
+      font-size: 14px;
+      margin-top: 15px;
+    }
+
+    .button-link:hover {
+      background-color: #0056b3;
+      border-color: #004a9f;
+      color: white;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Event-based 3D Motion Detection with Depth-Dependent PSFs</h1>
+
+  <div class="authors">
+    <strong>Adam Cahall</strong> and Haley Lee
+    <br>
+    <em>Final Project for CS 6662 (Computational Imaging)</em>
+  </div>
+
+  <img src="images/overall_pipeline.png" alt="Coactive Learning Diagram" class="paper-image">
+
+  <div class="section-title">Abstract</div>
+  <p>
+    We propose a new event-based 3D motion detection technique that incorporates depth-dependent point spread functions (PSFs) into event cameras.
+    Our technique is based on the event-camera vision, where the specialized imaging sensors are used to take advantage of the pixel-wise brightness changes. 
+    Each pixel maintains its own reference brightness level, ensuring robustness against motion blur and achieving high sparsity. By introducing a phasemap
+    that generates depth-dependent PSFs, event cameras can capture 3D information rather than being limited to 2D. We demonstrate this capability through simulations
+    of a 3D object tracking test and implement an end-to-end phase mask optimization process. This process simultaneously updates the phase mask height map and the
+    neural network to determine the trajectory of the 3D object. Through exploratory end-to-end phase mask optimization, we verified that our produced phase mask 
+    can produce event-oriented, depth-dependent PSFs, potentially paving the way for full 3D motion detection using event cameras.
+  </p>
+
+  <div class="section-title">My Contribution</div>
+  <p>
+    For this project, I designed the architecture of a convolutional neural network (CNN) that predicted the 3D location of an object given an input event frame.
+    I also designed a customizable 3D environment to simulate object trajectories, which we used to train and test our object-tracking CNN. Lastly, I ran experiments
+    evaluating our model in environments of varying complexity, and conducted a thorough error analysis to determine strengths and weaknesses of our proposed architecture.
+  </p>
+
+  <a href="data/CS6662_Final_Report.pdf" class="button-link" target="_blank">
+    View Full Paper (PDF)
+  </a>
+
+</body>
+</html>

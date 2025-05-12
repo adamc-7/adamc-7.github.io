@@ -10,6 +10,10 @@
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
     <script src="index.js"></script>
     
   </head>
@@ -86,6 +90,19 @@
                 <p>
                   We propose coactive learning, which makes use of implicit human feedback found in user-edited LLM-generated text, as a model and feedback mechanism for training LLMs.
                 </p>
+
+                <div>
+                  <button id="btn1" class="abstract-button" onclick="toggleAbstract('btn1', 'abs1')">Show Abstract</button>
+                  <div id="abs1" class="abstract-content">
+                    <strong>Abstract: </strong>We propose coactive learning as a model and feedback mechanism for training large language models (LLMs). The key insight is that users provide implicit
+                    feedback whenever they edit the text y proposed by an LLM. While the edited text \(\bar{y}\) is typically not a gold-standard example for supervised training, coactive
+                    learning merely requires that the edited text \(\bar{y}\) is an improvement over the proposed text \(y\). Note that such weak implicit preference feedback \(\bar{y} \succ y\) is available
+                    in many application settings on a per-user basis, thus enabling the personalization of LLMs. In this paper, we develop the theoretical basis for coactive training
+                    of non-linear models, and we derive CoRLL as the first coactive learning algorithm for LLMs. Empirical results indicate that CoRLL is effective even for weak and
+                    noisy coactive preference feedback, making it a promising algorithm for training and personalization of LLMs from feedback that is naturally collected in many use cases.
+                  </div>
+                </div>
+              
               </td>
             </tr>
 
@@ -118,6 +135,29 @@
                 <p>
                   We derive probabilistic models for COVID-19 spread in childcare centers and run simulations to evaluate current and potential future health and safety protocols.
                 </p>
+
+                <!-- <br>
+                <button class="abstract-button" onclick="toggleAbstract()">Show Abstract</button>
+            
+                <div id="abstract" class="abstract-content">
+                  We propose coactive learning as a model and feedback mechanism for training large language models (LLMs). The key insight is that users provide implicit
+                  feedback whenever they edit the text y proposed by an LLM. While the edited text \(\bar{y}\) is typically not a gold-standard example for supervised training, coactive
+                  learning merely requires that the edited text \(\bar{y}\) is an improvement over the proposed text \(y\). Note that such weak implicit preference feedback \(\bar{y} \succ y\) is available
+                  in many application settings on a per-user basis, thus enabling the personalization of LLMs. In this paper, we develop the theoretical basis for coactive training
+                  of non-linear models, and we derive CoRLL as the first coactive learning algorithm for LLMs. Empirical results indicate that CoRLL is effective even for weak and
+                  noisy coactive preference feedback, making it a promising algorithm for training and personalization of LLMs from feedback that is naturally collected in many use cases.
+                </div> -->
+
+                <div style="margin-top: 20px;">
+                  <button id="btn2" class="abstract-button" onclick="toggleAbstract('btn2', 'abs2')">Show Abstract</button>
+                  <div id="abs2" class="abstract-content">
+                    <strong>Abstract: </strong>The COVID-19 pandemic has had a profound impact on the lives of working parents, who are struggling to balance their responsibilities at work and at home, as
+                    well as childcare providers who are working hard to keep their doors open. In this paper, we examine the effect of childcare policies on the availability of
+                    childcare. Specifically, we investigate how classroom size, the likelihood of COVID-19 infection, and the number of days a classroom may need to close affect
+                    the amount of time parents will need to stay at home with their children. Our results show that even low probabilities of infection combined with stringent policies
+                    can have a large impact on the duration of a child's exclusion from childcare services.
+                  </div>
+                </div>
               </td>
             </tr>
     
@@ -212,6 +252,8 @@
       This project was done in collaboration with PhD student <a href="https://dbwls3284.github.io">Haley Lee</a>. We are currently extending upon this work in collaboration with
       <a href="https://kristinamonakhova.com/kristina/">Prof. Kristina Monakhova</a>.
     </p>
+    <br>
+    <a href="project1.html" class="nav-button">Project Page</a>
   </td>
 </tr>
 
@@ -239,23 +281,11 @@
     <p>
       We extend existing Graph Kernel Neural Network models with CNN-inspired components, including pooling and attention, and apply them to the graph classification problem. This project was done in collaboration with fellow undergraduate <a href="https://www.linkedin.com/in/avi-ruthen-776236255/">Avi Ruthen</a>.
     </p>
+    <br>
+    <a href="project2.html" class="nav-button">Project Page</a>
   </td>
 </tr>
 
 </tbody></table>
-
-          <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:0px">
-                <br>
-                <p style="text-align:right;font-size:small;">
-                  Website source code from <a href="https://github.com/jonbarron/jonbarron_website">here</a>. 
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-        </td>
-      </tr>
-    </table> -->
   </body>
 </html>

@@ -8,6 +8,14 @@ function sleepSync(ms) {
   }
 }
 
+function toggleAbstract(buttonId, contentId) {
+  const abs = document.getElementById(contentId);
+  const btn = document.getElementById(buttonId);
+
+  abs.classList.toggle("open");
+  btn.textContent = abs.classList.contains("open") ? "Hide Abstract" : "Show Abstract";
+}
+
 $(document).ready(function() {
     console.log("ready!");
     // teaser

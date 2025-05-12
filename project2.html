@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CNN-inspired Graph Kernel Neural Networks</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background-color: #fefefe;
+    }
+
+    h1 {
+      font-size: 28px;
+      /* color: #333; */
+    }
+
+    .authors {
+      font-size: 16px;
+      /* color: #555; */
+      margin-bottom: 20px;
+    }
+
+    .section-title {
+      font-weight: bold;
+      margin-top: 30px;
+      font-size: 18px;
+    }
+
+    .paper-image {
+      width: 100%;
+      max-height: 400px;
+      object-fit: contain;
+      margin-top: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .button-link {
+      display: inline-block;
+      background-color: #007BFF;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 4px;
+      border: 2px solid #0056b3;
+      text-decoration: none;
+      font-size: 14px;
+      margin-top: 15px;
+    }
+
+    .button-link:hover {
+      background-color: #0056b3;
+      border-color: #004a9f;
+      color: white;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>CNN-inspired Graph Kernel Neural Networks</h1>
+
+  <div class="authors">
+    <strong>Adam Cahall</strong> and Avi Ruthen
+    <br>
+    <em>Final Project for CS 6850 (The Structure of Information Networks)</em>
+  </div>
+
+  <img src="images/graph_larger.png" alt="Coactive Learning Diagram" class="paper-image">
+
+  <div class="section-title">Abstract</div>
+  <p>
+    In recent years, a new class of Graph Neural Network (GNN) architectures has emerged which combines ideas from graph kernel methods and the 
+    Message-Passing Neural Network (MPNN) GNN architecture. These models, which we call Graph Kernel Neural Networks, achieve state-of-the-art 
+    performance on graph classification benchmark datasets and often have an added interpretability advantage over traditional MPNNs due to frequently 
+    being parameterized by learnable hidden graphs which can be visualized. One of the most popular Graph Kernel Neural Network architectures is the KerGNN
+    model: inspired by how Convolutional Neural Networks (CNNs) operate, KerGNN compares trainable graph filters to subgraphs of its input through a graph
+    kernel to generate a rich graph embedding that encodes local and global structure. Given the strong similarities between KerGNN and CNNs, we take further
+    inspiration from CNNs and incorporate pooling and attention, two popular components of modern CNN architectures, into the KerGNN architecture. Although
+    our initial results are inconclusive, we believe that with additional time and computational resources, our extended model could potentially be 
+    shown to outperform the base KerGNN model.
+  </p>
+
+  <div class="section-title">My Contribution</div>
+  <p>
+    For this project, I developed a channel-wise attention component for graph neural networks based on the squeeze-and-excitation block (typically using in image-based CNNs).
+    I extended upon an existing graph classification model, KerGNN, by incorporating this attention component along with CNN-inspired pooling layers. To evaluate our proposed architecture,
+    I conducted experiments on a variety of real-world graph tasks, which ranged from classifying social networks to detecting molecular structures. 
+  </p>
+
+  <a href="data/CS6850_Final_Paper.pdf" class="button-link" target="_blank">
+    View Full Paper (PDF)
+  </a>
+
+</body>
+</html>
