@@ -214,7 +214,6 @@ span.highlight {
   background-color: white;
   color:#007BFF ;
   padding: 6px 10px;
-  /* border-color: #007BFF; */
   border: 2px solid #007BFF;
   border-radius: 4px;
   cursor: pointer;
@@ -233,19 +232,10 @@ span.highlight {
   max-height: 500px;
 }
 
-/* .abstract-content.open {
-  display: block;
-} */
-
-/* .abstract-wrapper {
-  position: relative;
-} */
-
 .nav-button {
   background-color: white;
   color:#007BFF ;
   padding: 6px 10px;
-  /* border-color: #007BFF; */
   border: 2px solid #007BFF;
   border-radius: 4px;
   cursor: pointer;
@@ -255,6 +245,4 @@ span.highlight {
 
 .nav-button:hover {
   color:#007BFF ;
-  /* background-color: #0056b3;
-  border-color: #004a9f; */
 }
